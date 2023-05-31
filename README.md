@@ -2,7 +2,7 @@
 
 Demonstrates how to delete a specific workflow history using the Temporal Java SDK. 
 
-# build
+# Build
 ```bash
 cd /path/to/project/root
 ./gradlew build

@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.rickross'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.temporal', name: 'temporal-sdk', version: '1.19.1'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation group: 'io.temporal', name: 'temporal-testing', version: '1.19.1'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.5.1'
+}
+
+test {
+    useJUnitPlatform()
+}
